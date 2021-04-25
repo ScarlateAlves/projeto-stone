@@ -1,0 +1,9 @@
+.containerCotacao {
+  display: grid;
+  gap: 1rem;
+}
+
+.containerArticle {
+  display: flex;
+  gap: 1rem;
+}

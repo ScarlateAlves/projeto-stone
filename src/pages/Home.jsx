@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Cotacao from "../components/Cotacao";
+import Header from "../components/Header"
 import Results from "../components/Results";
 import { busca } from "../api/api";
+import "./styles.css";
 import { iof, realComImposto, realSemImposto,dolarComImposto } from "../models/conversao";
 const Home = () => {
   const [etapa, setEtapa] = useState(0);
@@ -37,6 +39,16 @@ const Home = () => {
     setEtapa(etapa+1)
   }
 
-  return <>{event[etapa]}</>;
+  return <div>
+
+   {valores.map((item) => (
+          <article key={item.id}>
+            <Header date={item.create_date}></Header>
+          </article>
+        ))}
+
+  {event[etapa]}
+  
+  </div>;
 };
 export default Home;

@@ -1,0 +1,22 @@
+.logo {
+  width: 20%;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.traco {
+  display: inline-block;
+  flex-direction: row;
+  width: 83px;
+  height: 4px;
+  background: #00ab63;
+}
+
+.nome {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #00ab63;
+}
